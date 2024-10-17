@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './registro-cirugias.component.html',
   styleUrl: './registro-cirugias.component.css'
 })
-export class RegistroCirugiasComponent {
+export default class RegistroCirugiasComponent {
 
 }

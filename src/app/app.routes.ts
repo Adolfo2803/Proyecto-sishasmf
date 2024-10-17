@@ -14,6 +14,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./business/archivo-clinic/archivo-clinic.component')
             },
             {
+                path: 'registro_cirugias',
+                loadComponent: () => import('./business/registro-cirugias/registro-cirugias.component')
+            },
+            {
                 path: '',
                 redirectTo: 'dashboard',
                 pathMatch:'full'
