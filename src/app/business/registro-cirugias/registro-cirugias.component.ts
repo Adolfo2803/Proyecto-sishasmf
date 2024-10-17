@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { TablaCirugiasService } from './services/tabla-cirugias.service';
+import Tabla_cirugias from './interfaces/Tabla_cirugias';
 
 @Component({
   selector: 'app-registro-cirugias',
@@ -10,7 +12,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export default class RegistroCirugiasComponent {
 
-  //constructor(public produService: ProductoService, public pacienteService: PacienteService){}
+  constructor(public tablaCirugiasService: TablaCirugiasService){}
 
 
 
@@ -49,10 +51,10 @@ export default class RegistroCirugiasComponent {
     } else {
       alert('El formulario no es válido. Por favor, rellena todos los campos requeridos.');
     }
-   //this.pacienteService.agregarPaciente(this.cirugiaForm.value)
+   this.tablaCirugiasService.agregarPaciente(this.cirugiaForm.value)
 
-   //sessionStorage.setItem('form', JSON.stringify(this.cirugiaForm.value));
-   //const formStorage = JSON.parse(sessionStorage.getItem('form')!) as Paciente; 
+   sessionStorage.setItem('form', JSON.stringify(this.cirugiaForm.value));
+   const formStorage = JSON.parse(sessionStorage.getItem('form')!) as TablaCirugiasService; 
   }
 
 }

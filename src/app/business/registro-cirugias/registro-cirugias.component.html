@@ -120,7 +120,7 @@
       </form>
   
       <!-- Tabla debajo del formulario -->
-      <!-- <table class="table mt-4">
+      <table class="table mt-4">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -146,7 +146,7 @@
         </thead>
         <tbody>
           
-            @for (paciente of pacienteService.pacientes; track $index) {
+            @for (paciente of tablaCirugiasService.tabla_cirugias; track $index) {
   
               <tr>
             <th scope="row">{{paciente.id}}</th>
@@ -173,7 +173,7 @@
             }
           
         </tbody>
-      </table> -->
+      </table>
     </div>
   </div>
   
