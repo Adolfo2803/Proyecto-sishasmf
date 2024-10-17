@@ -146,28 +146,28 @@
         </thead>
         <tbody>
           
-            @for (paciente of tablaCirugiasService.tabla_cirugias; track $index) {
+            @for (cirugias of tablaCirugiasService.tabla_cirugias; track $index) {
   
               <tr>
-            <th scope="row">{{paciente.id}}</th>
-            <td>{{paciente.fechaCirugia}}</td>
-            <td>{{paciente.numCirugia}}</td>
-            <td>{{paciente.numExpediente}}</td>
-            <td>{{paciente.nomPaciente}}</td>
-            <td>{{paciente.apellidoPPaciente}}</td>
-            <td>{{paciente.apellidoMPaciente}}</td>
-            <td>{{paciente.nomCirujano}}</td>
-            <td>{{paciente.nomAnestesiologo}}</td>
-            <td>{{paciente.nomResidente}}</td>
-            <td>{{paciente.nomCirugia}}</td>
-            <td>{{paciente.nomEnfeInt}}</td>
-            <td>{{paciente.nomEnfeCir}}</td>
-            <td>{{paciente.tipoAnes}}</td>
-            <td>{{paciente.iniciaAnes}}</td>
-            <td>{{paciente.finAnes}}</td>
-            <td>{{paciente.medicamento}}</td>
-            <td>{{paciente.suturas}}</td>
-            <td>{{paciente.material}}</td>
+            <th scope="row">{{cirugias.id}}</th>
+            <td>{{cirugias.fechaCirugia}}</td>
+            <td>{{cirugias.numCirugia}}</td>
+            <td>{{cirugias.numExpediente}}</td>
+            <td>{{cirugias.nomPaciente}}</td>
+            <td>{{cirugias.apellidoPPaciente}}</td>
+            <td>{{cirugias.apellidoMPaciente}}</td>
+            <td>{{cirugias.nomCirujano}}</td>
+            <td>{{cirugias.nomAnestesiologo}}</td>
+            <td>{{cirugias.nomResidente}}</td>
+            <td>{{cirugias.nomCirugia}}</td>
+            <td>{{cirugias.nomEnfeInt}}</td>
+            <td>{{cirugias.nomEnfeCir}}</td>
+            <td>{{cirugias.tipoAnes}}</td>
+            <td>{{cirugias.iniciaAnes}}</td>
+            <td>{{cirugias.finAnes}}</td>
+            <td>{{cirugias.medicamento}}</td>
+            <td>{{cirugias.suturas}}</td>
+            <td>{{cirugias.material}}</td>
   
           </tr>
             }
