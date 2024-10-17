@@ -14,13 +14,9 @@ export const routes: Routes = [
                 loadComponent: () => import('./business/archivo-clinic/archivo-clinic.component')
             },
             {
-<<<<<<< HEAD
-                path: 'registro_cirugias',
-                loadComponent: () => import('./business/registro-cirugias/registro-cirugias.component')
-=======
                 path: 'busqueda-cirugia',
                 loadComponent: () => import('./business/busqueda-cirugia/busqueda-cirugia.component')
->>>>>>> d90a12e (logro:se genera componente de busqueda y rutas)
+
             },
             {
                 path: '',
