@@ -19,6 +19,11 @@ export const routes: Routes = [
 
             },
             {
+                path: 'registro_cirugias',
+                loadComponent: () => import('./business/registro-cirugias/registro-cirugias.component')
+
+            },
+            {
                 path: '',
                 redirectTo: 'dashboard',
                 pathMatch:'full'
